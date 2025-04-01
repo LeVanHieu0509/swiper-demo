@@ -49,19 +49,6 @@ const ThemeWrapper = ({ children, theme }: ThemeWrapperProps) => {
     return Fragment;
   }, [pathname]);
 
-  useEffect(() => {
-    // Initialize Swiper after component is mounted
-    const swiper = new Swiper(".swiper", {
-      modules: [Navigation, Pagination],
-      slidesPerView: 1, // Adjust this based on the number of slides you want to show at a time
-      spaceBetween: 10, // Space between slides
-      navigation: true, // Enable navigation arrows
-      pagination: {
-        clickable: true, // Enable pagination dots
-      },
-    });
-  }, []);
-
   return (
     <ThemeProvider theme={theme}>
       <div style={{ background: "#ffffff" }}>

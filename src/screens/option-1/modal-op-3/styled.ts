@@ -4,142 +4,19 @@ import styled, { css, keyframes } from "styled-components";
 
 const popEffect = keyframes`
  0% {
-    transform: scale(0.5);
+    transform: translateX(100%);
     opacity: 0;
   }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  70% {
-    transform: scale(0.9);
-    opacity: 1;
-  }
+ 
   100% {
-    transform: scale(1);
+   transform: translateX(0%);
     opacity: 1;
   }
-`;
-
-const tf = keyframes`
-from{
-  opacity: 0;
-}to{
-  opacity: 1;}
-`;
-
-const t1 = keyframes`
-from{
-  opacity: 0;
-  transform: translate(-20px,-20px);
-}to{
-  opacity: 1;
-  transform: translate(0,0);
-}
-`;
-const t2 = keyframes`
-from{
-  opacity: 0;
-  transform: translate(20px,20px);
-}to{
-  opacity: 1;
-  transform: translate(0,0);
-}
-`;
-const t3 = keyframes`
-from{
-  opacity: 0;
-  transform: translateX(-20px);
-}to{
-  opacity: 1;
-  transform: translateX(0);
-}
-`;
-const t4 = keyframes`
-from{
-  opacity: 0;
-  transform: translateX(20px);
-}to{
-  opacity: 1;
-  transform: translateX(0);
-}
-`;
-const t5 = keyframes`
-from{
-  opacity: 0;
-  transform: translate(-20px,-20px);
-}to{
-  opacity: 1;
-  transform: translate(0,0);
-}
-`;
-const t6 = keyframes`
-from{
-  opacity: 0;
-  transform: translate(20px,-20px);
-}to{
-  opacity: 1;
-  transform: translate(0,0);
-}
 `;
 
 export const DialogBodyContent = styled.div`
   background: #ffffff !important;
   border-radius: 40px;
-
-  .svgg {
-    width: 45%;
-    .m1,
-    .m2,
-    .m3,
-    .m4,
-    .m5,
-    .m6,
-    .fwd {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .m1 {
-      animation: ${t1} 1.5s;
-      animation-delay: 0.2s;
-    }
-
-    .m2 {
-      left: 238px;
-      animation: ${t2} 1.5s;
-      animation-delay: 0.2s;
-    }
-    .m3 {
-      top: 182px;
-      animation: ${t3} 1.5s;
-      animation-delay: 0.2s;
-    }
-    .m4 {
-      top: 182px;
-      left: 238px;
-      animation: ${t4} 1.5s;
-      animation-delay: 0.2s;
-    }
-    .m5 {
-      top: 387px;
-      animation: ${t5} 1.5s;
-      animation-delay: 0.2s;
-    }
-    .m6 {
-      top: 387px;
-      left: 235px;
-      animation: ${t6} 1.5s;
-      animation-delay: 0.2s;
-    }
-    .fwd {
-      top: 40%;
-      left: 32%;
-      animation: ${tf} 1.5s;
-      animation-delay: 0.2s;
-    }
-  }
 
   .open {
     display: flex;
@@ -174,7 +51,7 @@ export const DialogThanksWrapper = styled.div`
   .${DialogContent.styledComponentId} {
     z-index: 100;
     background: #ffffff !important;
-    animation: ${popEffect} 0.8s cubic-bezier(0.755, 0.05, 0.855, 0.06) forwards;
+    animation: ${popEffect} 0.8s linear forwards;
 
     width: 730px;
     padding: 0;

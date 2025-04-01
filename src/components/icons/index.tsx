@@ -28,6 +28,8 @@ import IconFacebook from "./facebook";
 import IconTwitter from "./twitter";
 import IconInstagram from "./instagram";
 import IconLinkIn from "./linkin";
+import IconArrowLeftCircle from "./arrow-left-circle";
+import IconArrowRightCircle from "./arrow-right-circle";
 
 const IconComponent = {
   close: IconClose,
@@ -61,6 +63,8 @@ const IconComponent = {
   "icon-twitter": IconTwitter,
   "icon-instagram": IconInstagram,
   "icon-linkin": IconLinkIn,
+  "icon-arrow-left-circle": IconArrowLeftCircle,
+  "icon-arrow-right-circle": IconArrowRightCircle,
 };
 
 export interface IconProps {

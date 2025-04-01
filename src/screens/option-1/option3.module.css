@@ -1,0 +1,38 @@
+.option3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .option3 > div {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container > img {
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .size1 {
+    width: 512px;
+  }
+  
+  .size2 {
+    width: 409px;
+  }
+  
+  .size3 {
+    width: 307px;
+  }

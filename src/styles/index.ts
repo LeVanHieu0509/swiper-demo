@@ -198,7 +198,7 @@ export const DialogContent = styled.div.attrs(({ big, radius12px, radius16px, la
   max-height: 90vh;
   max-width: 100vw;
   background: white;
-  border-radius: 16px;
+  border-radius: 40px;
 
   display: flex;
   flex-direction: column;

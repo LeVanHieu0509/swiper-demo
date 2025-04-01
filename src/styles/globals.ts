@@ -278,13 +278,13 @@ const style = css`
     position: absolute;
   }
 
-  ${renderSpace("margin")};
+  /* ${renderSpace("margin")};
   ${renderSpace("padding")};
 
   @media ${device.mobile} {
     ${renderSpace("margin", "sm-")};
     ${renderSpace("padding", "sm-")};
-  }
+  } */
 `;
 
 export const GlobalStyle = createGlobalStyle`
